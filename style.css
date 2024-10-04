@@ -114,4 +114,12 @@ input,select{
     .tab{
         margin: 5px 10px 0 10px;
     }
+
+    .content{
+        margin: 50px 10px -30px 10px;
+    }
+
+    .signature{
+        margin: 20px 10px -70px 10px;
+    }
 }
