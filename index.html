@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebFuelers Receipt</title>
+    <script src="https://kit.fontawesome.com/68319829d3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="logo">
+        <img src="logo.png" alt="WebFuelers">
+        <h1>Grow your online visibility and spread your business worldwide.</h1>
+    </div>
+
+    <div class="content">
+        <h2>RECEIPT</h2>
+    </div>
+
+    <div class="watermark">
+
+    <div class="tab">
+        <table>
+            <tr>
+                <th></th>
+                <th></th>
+            </tr>
+            <tr>
+                <td>Name</td>
+                <td><input type="text" placeholder="Enter client name"></td>
+            </tr>
+            <tr>
+                <td>Company</td>
+                <td><input type="text" placeholder="Enter Company name"></td>
+            </tr>
+            <tr>
+                <td>Service</td>
+                <td><select>
+                    <option>Choose Service</option>
+                    <option>Facebook Ads Marketing</option>
+                    <option>Website Development</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td>Payment Getway</td>
+                <td><select>
+                    <option>Choose Getway</option>
+                    <option>Bkash</option>
+                    <option>Nagad</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td>Amount</td>
+                <td><span>৳</span><input type="number" placeholder="Enter Bill Amount"></td>
+            </tr>
+            <tr>
+                <td>TxnID</td>
+                <td><input type="text" placeholder="Enter TxnID"></td>
+            </tr>
+            <tr>
+                <td>Payment Date</td>
+                <td><input type="date"></td>
+            </tr>
+            <tr>
+                <td>Payment Status</td>
+                <td><select>
+                    <option>Choose Status</option>
+                    <option>Received</option>
+                    <option>Pending</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td>Payment Due</td>
+                <td><span id="due">৳</span><input type="number" placeholder="Enter Due Amount" id="due"></td>
+            </tr>
+            
+        </table>
+    </div>
+
+    
+    
+</div>
+
+<div class="signature">
+    <select>
+        <option value="">Choose One</option>
+        <option value="">Hossain, CO</option>
+        <option value="">Asif, CMO</option>
+    </select>
+    <span class="sig"><p>Recipient</p></span>
+</div>
+
+<div class="foot">
+    <h2>Note:</h2><span> <p>This is computer generated receipt and does not require physical signature.</p></span>  
+</div>
+
+    <div class="print">
+        <button type="button" id="print" onclick="print()">
+            <span>
+                <i class="fa-solid fa-print"></i>
+            </span>
+            <span>Print</span>
+        </button>
+    </div>
+    
+</body>
+</html>
