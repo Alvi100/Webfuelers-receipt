@@ -109,3 +109,9 @@ input,select{
         display: none;
     }
 }
+
+@media screen and (max-width: 600px){
+    .tab{
+        margin: 5px 10px 0 10px;
+    }
+}
