@@ -6,6 +6,7 @@
     <title>WebFuelers Receipt</title>
     <script src="https://kit.fontawesome.com/68319829d3.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/habibmhamadi/multi-select-tag@3.1.0/dist/css/multi-select-tag.css"> -->
 </head>
 <body>
     <div class="logo">
@@ -35,9 +36,10 @@
             </tr>
             <tr>
                 <td>Service</td>
-                <td><select>
+                <td><select id="service" multiple>
                     <option>Choose Service</option>
                     <option>Facebook Ads Marketing</option>
+                    <option>Search Engine Optimization</option>
                     <option>Website Development</option>
                 </select></td>
             </tr>
@@ -47,7 +49,6 @@
                     <option>Choose Getway</option>
                     <option>Bkash</option>
                     <option>Nagad</option>
-                    <option>Bank Transfer</option>
                 </select></td>
             </tr>
             <tr>
@@ -104,5 +105,23 @@
         </button>
     </div>
     
+    <script src="https://cdn.jsdelivr.net/gh/habibmhamadi/multi-select-tag@3.1.0/dist/js/multi-select-tag.js"></script>
+    <script>
+        // new MultiSelectTag('service')  // id
+
+        new MultiSelectTag('service', {
+    rounded: true,    // default true
+    shadow: true,      // default false
+    placeholder: 'Search',  // default Search...
+    tagColor: {
+        textColor: '#327b2',
+        borderColor: '#92e681',
+        bgColor: '#eaffe6',
+    },
+    onChange: function(values) {
+        console.log(values)
+    }
+})
+    </script>
 </body>
 </html>
